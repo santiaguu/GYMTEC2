@@ -1,0 +1,36 @@
+.contenido {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .izquierda, .derecha{
+    width: 48%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .izquierda, .derecha h2{
+    color: white;
+  }
+  
+  h3{
+    color: aqua;
+  }
+  
+  .izquierda, .derecha p{
+    color: white;
+  }
+  
+  img{
+    width: 200px;
+    text-align: center;
+  }
+  
+  iframe{
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  figure{
+    color: white;
+  }
