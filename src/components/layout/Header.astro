@@ -1,18 +1,38 @@
 ---
+const { cookies } = Astro;
 
+const accessToken = cookies.get("sb-access-token");
+const refreshToken = cookies.get("sb-refresh-token");
+
+const isLoggedIn = accessToken && refreshToken;
 ---
 
 <header>
     <nav>
-        <a href="index.html"><img src="/img/logo.png" width="50" height="50"></a>
-        <ul>
-            <li><a href="index.html">GYM TEC</a></li>
-            <li><a href="/clases-programas">CLASES Y PROGRAMAS</a></li>
-            <li><a href="nosotros.html">NOSOTROS</a></li>
-            <li><a href="promociones.html">PROMOCIONES</a></li>
-            <li><a href="contactanos.html">CONTACTANOS</a></li>
-            <li><a href="/login">IN SESION</a></li>
-            <li><a href="/register">Inscribete ya!</a></li>
+    <a href="/"><img src="/img/logo.png" width="50" height="50" alt="Logo"></a>
+    <ul>
+        <li><a href="/">GYM TEC</a></li>
+        <li><a href="/clases-programas">CLASES Y PROGRAMAS</a></li>
+        <li><a href="/nosotros">NOSOTROS</a></li>
+        <li><a href="/promociones">PROMOCIONES</a></li>
+        <li><a href="/contactanos">CONTÁCTANOS</a></li>
+    </ul>
+    <ul>
+        {isLoggedIn ? (
+            <>
+                <li><a href="/dashboard">PANEL DE CONTROL</a></li>
+                <li>
+                <form action="/api/auth/signout">
+                    <button type="submit">Cerrar sesión</button>
+                </form>
+                </li>
+            </>
+            ) : (
+            <>
+                <li><a href="/signin">INICIAR SESIÓN</a></li>
+                <li><a href="/register">REGISTRARME</a></li>
+            </>
+        )}
         </ul>
     </nav>
 </header>
