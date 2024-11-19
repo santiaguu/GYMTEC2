@@ -20,7 +20,7 @@
   b{
     color: white;
   }
-  
+
   h3{
     color: aqua;
   }
@@ -44,6 +44,9 @@
     gap: 20px; 
     justify-content: center;
     align-items: center;
+    background-color: rgb(75, 75, 75);
+    border-radius: 10px;
+    width: 350px;
   }
   
   .entrenadores {
