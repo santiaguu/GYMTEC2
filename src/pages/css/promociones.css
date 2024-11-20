@@ -3,6 +3,7 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content;
 }
 
 #t1 h1, #t2 h2 {
@@ -25,17 +26,18 @@ table {
 }
 
 table th {
-    background-color: #20b2aa;
+    background-color: #1f756e;
     color: white;
     padding: 15px;
     border-radius: 3px;
+    border: none;
 }
 
 table td {
     padding: 20px;
-    background-color: white;
+    background-color: 1f756e;
     text-align: center;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
 }
 
@@ -69,7 +71,7 @@ button {
 
 .promo {
     border: 1px dotted;
-    background-color: aqua;
+    background-color: #1f756e;
     padding: 20px;
     border-radius: 10px;
     margin: 20px auto;
