@@ -35,7 +35,7 @@ table th {
 
 table td {
     padding: 20px;
-    background-color: 1f756e;
+    background-color: #1f756e;
     text-align: center;
     border: none;
     border-radius: 5px;
@@ -70,7 +70,7 @@ button {
 }
 
 .promo {
-    border: 1px dotted;
+    border: 0px;
     background-color: #1f756e;
     padding: 20px;
     border-radius: 10px;
