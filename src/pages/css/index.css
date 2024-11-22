@@ -14,6 +14,7 @@ h2 {
     text-align: center;
     color: #29cec6;
     margin-top: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 table {
@@ -34,11 +35,13 @@ th {
     background-color: #167571; 
     color: white;
     font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 td {
     background-color: #0f504d;
     color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 li {
