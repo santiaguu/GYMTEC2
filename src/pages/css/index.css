@@ -20,6 +20,8 @@ table {
     width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 th, td {
